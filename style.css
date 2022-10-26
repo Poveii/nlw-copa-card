@@ -33,6 +33,10 @@ header {
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
+
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: appear 0.4s forwards;
 }
 
 .card > img {
@@ -62,4 +66,11 @@ header {
 .info p {
   font-size: 0.875rem;
   line-height: 160%;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
